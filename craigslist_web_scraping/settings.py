@@ -15,7 +15,9 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# print(BASE_DIR)
 TEMPLATE_DIR = BASE_DIR.joinpath('templates')
+# print(TEMPLATE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -121,3 +123,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (BASE_DIR.joinpath('static'),)
+# print(STATICFILES_DIRS)
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# print(STATICFILES_DIRS)
